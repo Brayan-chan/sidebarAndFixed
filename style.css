@@ -87,22 +87,5 @@ main {
 }
 
 .toolbar {
-    width: 370px;
-    background: RGB(53,119, 243);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*Hacer que ningun elemento se quede afuera*/
-    padding: 0 20px;
-    position: fixed;
-    padding: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 20px;
-}
-
-.editor {
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-top: 50px;
+    background: RGB(53,119, 243);    
 }
