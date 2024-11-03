@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Samp>Sidebar and Content Fixed</Samp></title>
+    <title>Sidebar and Content Fixed</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <!--Incluye tailwind-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="layout">
@@ -24,8 +27,11 @@
             <div class="editor" contenteditable="true"></div>
         </main>
         <article class="widget">Widget</article>
-        <article class="statistics">Statistics</article>
+        <article data-tooltip-target="tooltip-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 statistics" >Statistics</article>
         <footer>Footer</footer>
     </div>
 </body>
+<!--Incluye tailwind-->
+<script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </html>
