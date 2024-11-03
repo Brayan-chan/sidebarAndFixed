@@ -40,6 +40,10 @@
         margin-top: 10px;
         padding: 0 20px;
         border-radius: 20px;
+        position: fixed;
+        /* Centrar el elemento */
+        left: 50%;
+        transform: translate(-32%, 0);
     }
 
     .editor {
@@ -48,17 +52,18 @@
         margin: 0 auto;
         padding: 20px;
         border: 1px solid #ccc;
+        margin-top: 60px;
     }
 }
 
 header {
     grid-area: header;
-    background: purple;
+    background: RGB(230,241,254);
 }
 
 footer {
     grid-area: footer;
-    background: purple;
+    background: RGB(230,241,254);
 }
 
 nav {
@@ -73,7 +78,7 @@ main {
 
 .widget {
     grid-area: widget;
-    background: #ffafaf;
+    background: RGB(60, 134, 239);
 }
 
 .statistics {
@@ -82,10 +87,22 @@ main {
 }
 
 .toolbar {
-    background: #6b3333;
+    width: 370px;
+    background: RGB(53,119, 243);
     display: flex;
     align-items: center;
     justify-content: space-between;
     /*Hacer que ningun elemento se quede afuera*/
     padding: 0 20px;
+    position: fixed;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 20px;
+}
+
+.editor {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 50px;
 }
